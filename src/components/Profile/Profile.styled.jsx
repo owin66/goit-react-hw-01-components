@@ -5,7 +5,8 @@ export const Profile = styled.div`
   width: 350px;
   border: 2px solid light-gray;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px 2px rgba(50, 50, 122, 0.2);
+  box-shadow: 1px 1px 5px 2px rgba(50, 50, 122, 0.4);
+  border-radius: 5px;
   background-color: white;
   font-size: 18px;
   color: #1c1c1c;
