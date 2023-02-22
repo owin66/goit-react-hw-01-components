@@ -16,13 +16,13 @@ export default function Statistics({ title, stats }) {
       <StatisticsSection>
         {title && <Title>{title}</Title>}
         <StatList>
-          {stats.map(stat => (
+          {stats.map(({ id, label, percentage }) => (
             <li
-              key={stat.id}
+              key={id}
               className="item"
               style={{ backgroundColor: randomColor() }}
             >
-              <StatsMarkup label={stat.label} percentage={stat.percentage} />
+              <StatsMarkup label={label} percentage={percentage} />
             </li>
           ))}
         </StatList>
